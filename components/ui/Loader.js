@@ -8,6 +8,7 @@ export default function Loader() {
                 <span>i</span>
                 <span>r</span>
             </div>
+
             <style jsx>{`
                 .loading {
                     font-size: 84px;

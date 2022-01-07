@@ -42,6 +42,10 @@ a {
     box-sizing: border-box;
 }
 
+:root {
+    --color-brown: #b56953;
+}
+
 .raleway-font {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .25em;
@@ -49,3 +53,5 @@ a {
     text-transform: uppercase;
     color: #000;
 }
+
+$base-color: #c6538c;

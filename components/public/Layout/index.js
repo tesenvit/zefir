@@ -6,7 +6,6 @@ export function Layout({children, title = 'Мини отель «Зефир» | 
     return (
         <>
             <Head title={title}/>
-
             <Header />
             <main>{children}</main>
             <Footer />
