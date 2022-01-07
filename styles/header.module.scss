@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 0 40px;
+    height: 110px;
+}
+
+.menu {
+    list-style: none;
+    height: 100%;
+}
+
+.menu > li a {
+    outline: 1px solid blue;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 140px;
+}
