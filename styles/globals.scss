@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Cormorant';
     font-style: normal;
@@ -8,10 +12,10 @@
 }
 
 @font-face {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin';
     font-style: normal;
     font-weight: 300;
-    src: local('Josefin'),
+    src: local('Josefin Sans'),
     url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.ttf') format('truetype'),
     url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff') format('woff2'),
     url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff2') format('woff');
@@ -26,32 +30,13 @@
     url('../public/fonts/Raleway/Raleway-Regular.woff') format('woff');
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin', sans-serif;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --color-brown: #b56953;
+main {
+    min-height: calc(100vh - $header-height - $footer-height);
 }
 
 .raleway-font {
-    font-family: 'Raleway', sans-serif;
+    font: 12px 'Raleway', sans-serif;
     letter-spacing: .25em;
-    font-size: 12px;
     text-transform: uppercase;
     color: #000;
 }
-
-$base-color: #c6538c;

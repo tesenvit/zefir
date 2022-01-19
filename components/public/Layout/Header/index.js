@@ -1,25 +1,18 @@
-import Navigation from './Navigation.js'
+import Navigation from './Navigation'
+import styles from './header.module.scss'
 
 export default function Header() {
     return (
-        <>
-            <header className="d-flex justify-content-between align-items-center wrapper">
-                <div className="col-2">left</div>
+        <header className={`flex items-center justify-center px-10 ${styles.wrapper}`}>
+            <div className={`w-1/5 h-full flex items-center outline outline-1 bg-brown-light`}>
+                weather
+            </div>
 
-                <div className="col-8 h-100">
-                    <Navigation />
-                </div>
+            <Navigation />
 
-                <div className="col-2 d-flex justify-content-end">right</div>
-            </header>
-
-            <style jsx>{`
-                .wrapper {
-                    padding: 0 40px;
-                    height: 110px;
-                    outline: 1px solid black;
-                }
-            `}</style>
-        </>
+            <div className={`w-1/5 h-full flex items-center justify-end outline outline-1 bg-brown-light`}>
+                right
+            </div>
+        </header>
     )
 }

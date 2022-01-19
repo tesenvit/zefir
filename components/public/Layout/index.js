@@ -2,10 +2,15 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head'
 
-export function Layout({children, title = 'Мини отель «Зефир» | Zefir'}) {
+const DEFAULT_TITLE = 'Мини отель «Зефир» | Zefir'
+
+export function Layout({children, title = DEFAULT_TITLE}) {
     return (
         <>
-            <Head title={title}/>
+            <Head>
+                <title>{title}</title>
+            </Head>
+
             <Header />
             <main>{children}</main>
             <Footer />
