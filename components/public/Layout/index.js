@@ -12,7 +12,11 @@ export function Layout({children, title = DEFAULT_TITLE}) {
             </Head>
 
             <Header />
-            <main>{children}</main>
+
+            <main className="px-10">
+                {children}
+            </main>
+
             <Footer />
         </>
     )
