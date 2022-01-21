@@ -1,4 +1,5 @@
-import Weather from './Weather';
+import Info from './Info'
+import Weather from './Weather'
 import Navigation from './Navigation'
 import styles from './header.module.scss'
 
@@ -19,9 +20,7 @@ export default function Header() {
 
             <Navigation />
 
-            <div className={`w-1/5 h-full flex items-center justify-end outline outline-1 bg-brown-light`}>
-                right
-            </div>
+            <Info />
         </header>
     )
 }

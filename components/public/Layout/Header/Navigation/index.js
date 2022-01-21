@@ -55,7 +55,7 @@ export default function Navigation() {
         <nav className={`w-3/5 justify-center h-full flex`}>
             <Menu items={MENU_LEFT_ITEMS} />
 
-            <div className={`h-full w-28`}>
+            <div className={`h-full w-28 mx-5`}>
                 <Logo />
             </div>
 
