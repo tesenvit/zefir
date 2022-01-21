@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    @variants responsive {
+        .text-stroke {
+            text-shadow: 0 0 0.03rem black;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Cormorant';
     font-style: normal;
@@ -28,6 +36,15 @@
     src: local('Raleway Regular'),
     url('../public/fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
     url('../public/fonts/Raleway/Raleway-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'WeatherLinea';
+    font-style: normal;
+    font-weight: 500;
+    src: local('WeatherLinea Regular'),
+    url('../public/fonts/Weather/linea-weather-10.ttf') format('truetype'),
+    url('../public/fonts/Weather/linea-weather-10.woff') format('woff');
 }
 
 main {
