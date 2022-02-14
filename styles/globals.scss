@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    @variants responsive {
-        .text-stroke {
-            text-shadow: 0 0 0.03rem black;
-        }
-    }
-}
-
 @font-face {
     font-family: 'Cormorant';
     font-style: normal;
@@ -47,13 +39,15 @@
     url('../public/fonts/Weather/linea-weather-10.woff') format('woff');
 }
 
-main {
-    min-height: calc(100vh - $header-height - $footer-height);
+@layer base {
+    #__next {
+        @apply flex flex-col min-h-screen justify-between;
+    }
+    .font-raleway {
+        @apply uppercase text-black tracking-widest text-xs font-['Raleway'];
+    }
 }
 
-.raleway-font {
-    font: 12px 'Raleway', sans-serif;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    color: #000;
+.text-stroke {
+    text-shadow: 0 0 0.03rem black;
 }

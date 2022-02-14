@@ -4,6 +4,6 @@ module.exports = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.resolve(__dirname, 'sass',)],
-    prependData: `@import "styles/variables.scss"; @import "styles/weather.scss";`
+    prependData: `@import "styles/weather.scss";`
   },
 }

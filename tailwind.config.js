@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'min-sm': '460px',
+      },
       colors: {
         'brown': '#b56953',
         'brown-light': '#faf9f5',
@@ -17,7 +20,17 @@ module.exports = {
         'default': '0 2px 5px rgba(0, 0, 0, 0.5)',
         'lg': '0 2px 10px rgba(0, 0, 0, 0.5)',
       },
-    },
+      spacing: {
+        '3px': '3px',
+        '17.5': '4.375rem'
+      },
+      letterSpacing: {
+        widest: '.25em',
+      },
+      rotate: {
+        '135': '135deg',
+      }
+    }
   },
   plugins: [],
 }

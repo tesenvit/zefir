@@ -6,12 +6,18 @@ function Menu({items}) {
     const listItems = items.map((item, index) => <Item item={item} key={index} />)
 
     return (
-        <ul className={`
-            h-full 
-            flex 
-            items-center 
-            raleway-font 
-        `}>
+        <ul className="
+            lg:items-center
+            lg:flex-row
+            lg:first:pt-0
+            lg:last:pb-0
+
+            first:pt-7
+            last:pb-7
+            h-full
+            flex flex-col items-start
+            font-raleway
+        ">
             { listItems }
         </ul>
     )

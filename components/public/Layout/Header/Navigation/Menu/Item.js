@@ -1,32 +1,56 @@
-import Link from 'next/link'
-import SubMenu from './SubMenu'
-import PropTypes from 'prop-types'
-import { useRouter } from 'next/router'
+import Link              from 'next/link'
+import Arrow             from '/components/ui/Arrow'
+import SubMenu           from './SubMenu'
+import PropTypes         from 'prop-types'
+import { useState }      from 'react'
+import { useRouter }     from 'next/router'
+import { LARGE_SIZE }    from '/helpers/constants'
+import { useWindowSize } from '/helpers'
 
 function Item({item}) {
 
-    const router      = useRouter();
+    const router      = useRouter()
     const activeClass = router.pathname === item.url ? 'text-brown' : ''
-    const subMenu     = item.subMenuItems ? <SubMenu items={item.subMenuItems} /> : ''
     const url         = item.url === '#' ? router.pathname : item.url
 
+    const [isOpenSubMenu, setOpenSubMenu] = useState(false)
+    const subMenu = item.subMenuItems ? <SubMenu isShow={ isOpenSubMenu } items={ item.subMenuItems } /> : ''
+
+    const size        = useWindowSize()
+    const handleClick = () => setOpenSubMenu(subMenu && size.width < LARGE_SIZE ? !isOpenSubMenu : false)
+
+    const arrow = subMenu && size.width < LARGE_SIZE
+        ? <Arrow position={ isOpenSubMenu ? 'down' : 'right' } color={ isOpenSubMenu ? 'brown' : 'black' } />
+        : ''
+
     return (
-        <li className={`h-full px-5`}>
-            <div className="h-full group">
-                <Link href={ url }>
-                    <a className={`
-                        flex 
-                        items-center 
-                        h-full 
-                        transition-colors ease-in-out duration-300 
-                        hover:text-brown 
-                        ${activeClass}
-                    `}>
-                        { item.title }
-                    </a>
-                </Link>
-                { subMenu }
-            </div>
+        <li className="
+            lg:py-0
+            lg:px-5
+
+            h-full w-full
+            py-0.5
+            group
+        "
+            onClick={ handleClick }
+        >
+            <Link href={ url }>
+                <a className={`
+                    lg:py-0
+                    lg:pl-0
+                    
+                    py-1.5 px-7
+                    flex items-center justify-between
+                    h-full 
+                    hover:text-brown 
+                    transition-colors ease-in-out duration-300
+                    ${ activeClass }
+                `}>
+                    <span>{ item.title }</span>
+                    <span>{ arrow }</span>
+                </a>
+            </Link>
+            { subMenu }
         </li>
     )
 }
