@@ -1,5 +1,5 @@
 import Menu                    from './Menu'
-import Logo                    from '/components/ui/Logo'
+import Logo                    from 'components/ui/Logo'
 import { useState }            from 'react'
 import { useWindowSize }       from 'helpers'
 import { Divide as Hamburger } from 'hamburger-react'

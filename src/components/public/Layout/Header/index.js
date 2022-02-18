@@ -1,7 +1,7 @@
 import Phone from './Phone';
 import Weather from './Weather'
 import Navigation from './Navigation'
-import Logo from '/components/ui/Logo'
+import Logo from 'components/ui/Logo'
 
 export default function Header() {
     return (

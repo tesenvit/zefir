@@ -7,8 +7,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Cormorant Regular'), local('Cormorant-Regular'),
-    url('../public/fonts/Cormorant/Cormorant-Regular.ttf') format('truetype'),
-    url('../public/fonts/Cormorant/Cormorant-Regular.woff') format('woff');
+    url('../../public/fonts/Cormorant/Cormorant-Regular.ttf') format('truetype'),
+    url('../../public/fonts/Cormorant/Cormorant-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -16,9 +16,9 @@
     font-style: normal;
     font-weight: 300;
     src: local('Josefin Sans'),
-    url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.ttf') format('truetype'),
-    url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff') format('woff2'),
-    url('../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff2') format('woff');
+    url('../../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.ttf') format('truetype'),
+    url('../../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff') format('woff2'),
+    url('../../public/fonts/Josefin/JosefinSans-ExtraLight-Cyrillic.woff2') format('woff');
 }
 
 @font-face {
@@ -26,8 +26,8 @@
     font-style: normal;
     font-weight: 500;
     src: local('Raleway Regular'),
-    url('../public/fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
-    url('../public/fonts/Raleway/Raleway-Regular.woff') format('woff');
+    url('../../public/fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
+    url('../../public/fonts/Raleway/Raleway-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -35,8 +35,8 @@
     font-style: normal;
     font-weight: 500;
     src: local('WeatherLinea Regular'),
-    url('../public/fonts/Weather/linea-weather-10.ttf') format('truetype'),
-    url('../public/fonts/Weather/linea-weather-10.woff') format('woff');
+    url('../../public/fonts/Weather/linea-weather-10.ttf') format('truetype'),
+    url('../../public/fonts/Weather/linea-weather-10.woff') format('woff');
 }
 
 @layer base {

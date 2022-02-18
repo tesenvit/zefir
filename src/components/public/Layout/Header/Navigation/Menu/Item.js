@@ -1,11 +1,11 @@
 import Link              from 'next/link'
-import Arrow             from '/components/ui/Arrow'
+import Arrow             from 'components/ui/Arrow'
 import SubMenu           from './SubMenu'
 import PropTypes         from 'prop-types'
 import { useState }      from 'react'
 import { useRouter }     from 'next/router'
-import { LARGE_SIZE }    from '/helpers/constants'
-import { useWindowSize } from '/helpers'
+import { LARGE_SIZE }    from 'helpers/constants'
+import { useWindowSize } from 'helpers'
 
 function Item({item}) {
 
@@ -37,7 +37,7 @@ function Item({item}) {
             <Link href={ url }>
                 <a className={`
                     lg:py-0
-                    lg:pl-0
+                    lg:px-0
                     
                     py-1.5 px-7
                     flex items-center justify-between

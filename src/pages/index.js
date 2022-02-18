@@ -1,6 +1,6 @@
-import {Layout} from '/components/public/Layout';
+import { Layout } from 'components/public/Layout';
 
-export default function Home() {
+function Home() {
 
     const testContent = () => {
         const text = {
@@ -47,3 +47,5 @@ export default function Home() {
         </Layout>
     )
 }
+
+export default Home
