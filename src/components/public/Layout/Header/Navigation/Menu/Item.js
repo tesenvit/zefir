@@ -42,8 +42,7 @@ function Item({item}) {
                     py-1.5 px-7
                     flex items-center justify-between
                     h-full 
-                    hover:text-brown 
-                    transition-colors ease-in-out duration-300
+                    link
                     ${ activeClass }
                 `}>
                     <span>{ item.title }</span>

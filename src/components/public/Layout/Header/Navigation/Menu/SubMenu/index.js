@@ -14,7 +14,7 @@ function SubMenu({items, isShow}) {
             lg:opacity-0
             lg:h-0
             lg:overflow-hidden
-            lg:group-hover:overflow-visible
+            lg:overflow-visible
             lg:group-hover:opacity-100
             lg:group-hover:h-auto
             

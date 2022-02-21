@@ -17,8 +17,6 @@ export default function Header() {
             pl-3
             bg-white
             h-17.5
-
-            outline outline-1 outline-black-500
         ">
             <div className="block lg:hidden order-first">
                 <Logo onlyText={true} />

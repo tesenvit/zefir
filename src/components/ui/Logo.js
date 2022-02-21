@@ -1,7 +1,7 @@
 import Link      from 'next/link'
 import Image     from 'next/image'
-import textImg   from '/public/logo/text.svg'
-import letterImg from '/public/logo/letter.svg'
+import textImg   from '/public/images/logo/text.svg'
+import letterImg from '/public/images/logo/letter.svg'
 import PropTypes from 'prop-types'
 
 function Logo({onlyText = false}) {

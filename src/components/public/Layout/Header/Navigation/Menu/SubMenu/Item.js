@@ -16,9 +16,9 @@ function Item({ item }) {
             <Link href={ item.url }>
                 <a className={`
                     lg:pl-7
+                    
                     h-full
-                    transition-colors ease-in-out duration-300 
-                    hover:text-brown 
+                    link
                     block
                     whitespace-no-wrap
                     py-1.5

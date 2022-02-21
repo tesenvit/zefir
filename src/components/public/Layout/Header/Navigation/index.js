@@ -38,8 +38,6 @@ export default function Navigation() {
                 transition-opacity duration-200 ease-in delay-50
                 
                 ${ showNavigation }
-                
-                outline outline-1
             `}>
                 <Menu items={ HEADER_MENU.left } />
                 <div className={ `mx-5 w-28 hidden lg:block` }>
