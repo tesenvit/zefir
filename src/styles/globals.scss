@@ -46,14 +46,21 @@
     .font-raleway {
         @apply uppercase text-black tracking-widest text-xs font-['Raleway'];
     }
+    .font-cormorant {
+        @apply font-['Cormorant'];
+    }
     .title {
-        @apply font-['Cormorant'] text-black;
+        @apply font-cormorant text-black;
     }
     .link {
         @apply text-black hover:text-brown transition-colors ease-in-out duration-300;
     }
 }
 
-.text-stroke {
+.text-stroke-black {
+    text-shadow: 0 0 0.03rem black;
+}
+
+.text-stroke- {
     text-shadow: 0 0 0.03rem black;
 }

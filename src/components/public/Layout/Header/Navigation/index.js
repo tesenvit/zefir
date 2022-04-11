@@ -13,9 +13,9 @@ export default function Navigation() {
 
     const [isOpenMenu, setOpenMenu] = useState(false)
 
-    const size           = useWindowSize();
+    const size           = useWindowSize()
     const showNavigation = size.width < LARGE_SIZE
-        ? (isOpenMenu ? 'opacity-100 overflow-visible' : 'opacity-0 overflow-hidden')
+        ? (isOpenMenu ? 'opacity-100 overflow-visible' : 'opacity-0 overflow-hidden h-0')
         : ''
 
     return (

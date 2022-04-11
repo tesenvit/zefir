@@ -24,14 +24,15 @@ function Item({item}) {
         : ''
 
     return (
-        <li className="
-            lg:py-0
-            lg:px-5
+        <li
+            className="
+                lg:py-0
+                lg:mx-5
 
-            h-full w-full
-            py-0.5
-            group
-        "
+                h-full w-full
+                py-0.5
+                group
+            "
             onClick={ handleClick }
         >
             <Link href={ url }>

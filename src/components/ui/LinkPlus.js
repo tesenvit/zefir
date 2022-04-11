@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 function LinkPlus({ href, text, isTargetBlank = false }) {
     const target = isTargetBlank ? '_blank' : '_self'
 
-     return (
-         <Link href={ href }>
+    return (
+        <Link href={ href }>
             <a className="uppercase font-raleway flex items-center link group" target={ target }>
                 <span className="mr-2">{ text }</span>
                 <span className="
@@ -32,8 +32,8 @@ function LinkPlus({ href, text, isTargetBlank = false }) {
                     group-hover:after:bg-brown
                 " />
             </a>
-         </Link>
-     )
+        </Link>
+    )
 }
 
 LinkPlus.propTypes = {

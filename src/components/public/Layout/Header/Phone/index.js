@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Phone() {
     return (
         <div className="
-            lg:justify-end
+                lg:justify-end
             lg:order-3
             lg:w-1/5
 

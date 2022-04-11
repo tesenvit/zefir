@@ -7,7 +7,7 @@ function Home() {
             __html: ''
         }
 
-        for (let i = 0; i < 0; i++) {
+        for (let i = 0; i < 2; i++) {
             text.__html += `
                  <p class="pb-5">
                     Что такое Lorem Ipsum?
