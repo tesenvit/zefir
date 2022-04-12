@@ -1,6 +1,6 @@
-import Image           from 'next/image'
-import LinkPlus        from "components/ui/LinkPlus"
-import instagramImage  from '/public/images/socials/instagram.svg'
+import Image          from 'next/image'
+import LinkPlus       from 'components/ui/LinkPlus'
+import instagramImage from '/public/images/socials/instagram.svg'
 
 function Footer() {
 

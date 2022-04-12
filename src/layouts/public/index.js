@@ -3,8 +3,6 @@ import Header            from './Header'
 import Footer            from './Footer'
 import { DEFAULT_TITLE } from 'helpers/constants'
 
-
-
 export function Layout({ children, title = DEFAULT_TITLE }) {
     return (
         <>

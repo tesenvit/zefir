@@ -1,5 +1,5 @@
 import Button     from 'components/ui/Button'
-import { Layout } from 'components/public/Layout'
+import { Layout } from 'layouts/public'
 
 export default function Error404() {
     return (

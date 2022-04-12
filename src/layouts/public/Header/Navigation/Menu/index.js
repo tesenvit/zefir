@@ -1,4 +1,4 @@
-import Item from './Item.js';
+import Item      from './Item.js';
 import PropTypes from 'prop-types'
 
 function Menu({items}) {

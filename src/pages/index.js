@@ -1,4 +1,4 @@
-import { Layout } from 'components/public/Layout';
+import { Layout } from 'layouts/public';
 
 function Home() {
 
